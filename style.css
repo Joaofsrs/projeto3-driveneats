@@ -6,6 +6,8 @@ body{
   background-color: #E5E5E5;
 }
 
+/*---------- Header ----------*/
+
 header{
   width:100%;
   height: 92px;
@@ -36,6 +38,8 @@ header h2{
   font-size: 18px;
   color: #FFFFFF;
 }
+
+/*---------- Secao Corpo da Pagina ----------*/
 
 .Corpo-da-Pagina{
   width: 100%;
@@ -84,6 +88,8 @@ header h2{
   border-radius: 4px;
 }
 
+/*---------- Secao Pratos ----------*/
+
 .pratos{
   margin-top: 117px;
   margin-left: 12px;
@@ -91,6 +97,8 @@ header h2{
 
 .rollpratos{
   display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -105,8 +113,8 @@ header h2{
   flex-direction: column;
   align-items: center;
 
+  min-width: 172px;
   border-radius: 9px;
-  width: 172px;
   margin-right: 12px;
   background-color: #FFFFFF;
 
@@ -123,6 +131,12 @@ header h2{
 .prato div{
   width: 144px;
 }
+
+.prato:hover{
+  cursor: pointer;
+}
+
+/*---------- Secao Bebidas ----------*/
 
 .bebidas{
   margin-top: 25px;
@@ -146,7 +160,7 @@ header h2{
   align-items: center;
 
   border-radius: 9px;
-  width: 172px;
+  min-width: 172px;
   margin-right: 12px;
   background-color: #FFFFFF;
 
@@ -162,6 +176,12 @@ header h2{
 .bebida div{
   width: 144px;
 }
+
+.bebida:hover{
+  cursor: pointer;
+}
+
+/*---------- Secao Sobremesa ----------*/
 
 .sobremesas{
   margin-top: 25px;
@@ -186,7 +206,7 @@ header h2{
   align-items: center;
 
   border-radius: 9px;
-  width: 172px;
+  min-width: 172px;
   margin-right: 12px;
   background-color: #FFFFFF;
 
@@ -202,6 +222,12 @@ header h2{
 .sobremesa div{
   width: 144px;
 }
+
+.sobremesa:hover{
+  cursor: pointer;
+}
+
+/*---------- Footer ----------*/
 
 footer{
   width:100%;
@@ -221,6 +247,10 @@ footer button{
   height: 61px;
   width: 364px;
   border-radius: 50px;
+}
+
+footer button:hover{
+  cursor: pointer;
 }
 
 .clicado{
