@@ -1,3 +1,16 @@
+function validacao(){
+    const valida = document.querySelectorAll(".clicado");
+    const botaonaofunciona = document.querySelector(".naofunciona");
+    const botaofunciona = document.querySelector('.funciona');
+
+    if(valida.length === 3){
+        botaonaofunciona.classList.add("escondeBotao");
+        botaofunciona.classList.remove("escondeBotao");
+        botaonaofunciona.setAttribute("disabled", "");
+        botaofunciona.removeAttribute("disabled");
+    }
+}
+
 function PratoClicado(clique){
     const verifica = document.querySelector(".pratos .clicado");
 
@@ -6,6 +19,7 @@ function PratoClicado(clique){
     }
 
     clique.classList.add("clicado");
+    validacao();
 }
 
 function BebidaClicada(clique){
@@ -16,6 +30,7 @@ function BebidaClicada(clique){
     }
 
     clique.classList.add("clicado");
+    validacao();
 }
 
 function SobremesaClicada(clique){
@@ -26,4 +41,5 @@ function SobremesaClicada(clique){
     }
 
     clique.classList.add("clicado");
+    validacao();
 }

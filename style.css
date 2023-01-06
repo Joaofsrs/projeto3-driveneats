@@ -240,13 +240,26 @@ footer{
   justify-content: center;
 }
 
-footer button{
-  border: 2px solid #979797;
+.naofunciona{
+  border: none;
   background: #CBCBCB;
   color: #FFFFFF;
   height: 61px;
   width: 364px;
   border-radius: 50px;
+}
+
+.funciona{
+  border: none;
+  background: #32B72F;
+  color: #FFFFFF;
+  height: 61px;
+  width: 364px;
+  border-radius: 50px;
+}
+
+.escondeBotao{
+  display: none;
 }
 
 footer button:hover{
