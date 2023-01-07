@@ -25,9 +25,24 @@
                     <div class="prato" onclick="PratoClicado(this)">
                         <img src="./img/frango_yin_yang.png">
                         <div>
-                            <h3>Frango Yig Yang</h3>
+                            <h3>Frango Yig</h3>
                             <p class="descricao">Um pouco de batata, um pouco de salada</p>
-                            <p class="valor">R$ 14,90</p>
+                            <div class="preco">
+                                <p>R$ </p>
+                                <p class="valor">14.99</p>
+                            </div>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div class="prato" onclick="PratoClicado(this)">
+                        <img src="./img/frango_yin_yang.png">
+                        <div>
+                            <h3>Frango Yang</h3>
+                            <p class="descricao">Um pouco de batata, um pouco de salada</p>
+                            <div class="preco">
+                                <p>R$ </p>
+                                <p class="valor">15,88</p>
+                            </div>
                         </div>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -36,16 +51,10 @@
                         <div>
                             <h3>Frango Yig Yang</h3>
                             <p class="descricao">Um pouco de batata, um pouco de salada</p>
-                            <p class="valor">R$ 14,90</p>
-                        </div>
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
-                    <div class="prato" onclick="PratoClicado(this)">
-                        <img src="./img/frango_yin_yang.png">
-                        <div>
-                            <h3>Frango Yig Yang</h3>
-                            <p class="descricao">Um pouco de batata, um pouco de salada</p>
-                            <p class="valor">R$ 14,90</p>
+                            <div class="preco">
+                                <p>R$ </p>
+                                <p class="valor">20,20</p>
+                            </div>
                         </div>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -59,25 +68,34 @@
                         <div>
                             <h3 >Coquinha gelada</h3>
                             <p class="descricao">Lata 350ml</p>
-                            <p class="valor">R$ 4,90</p>
+                            <div class="preco">
+                                <p>R$ </p>
+                                <p class="valor">4,80</p>
+                            </div>
                         </div>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="bebida" onclick="BebidaClicada(this)">
                         <img src="./img/coquinha_gelada.png">
                         <div>
-                            <h3 >Coquinha gelada</h3>
+                            <h3 >Coquinha quente</h3>
                             <p class="descricao">Lata 350ml</p>
-                            <p class="valor">R$ 4,90</p>
+                            <div class="preco">
+                                <p>R$ </p>
+                                <p class="valor">6,50</p>
+                            </div>
                         </div>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="bebida" onclick="BebidaClicada(this)">
                         <img src="./img/coquinha_gelada.png">
                         <div>
-                            <h3 >Coquinha gelada</h3>
+                            <h3 >Coquinha natural</h3>
                             <p class="descricao">Lata 350ml</p>
-                            <p class="valor">R$ 4,90</p>
+                            <div class="preco">
+                                <p>R$ </p>
+                                <p class="valor">9,90</p>
+                            </div>
                         </div>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -91,25 +109,34 @@
                         <div>
                             <h3>Pudim</h3>
                             <p class="descricao">Apenas pudim</p>
-                            <p class="valor">R$ 7,90</p>
+                            <div class="preco">
+                                <p>R$ </p>
+                                <p class="valor">8,90</p>
+                            </div>
                         </div>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="sobremesa" onclick="SobremesaClicada(this)">
                         <img src="./img/pudim.png">
                         <div>
-                            <h3>Pudim</h3>
+                            <h3>Pudinzinho</h3>
                             <p class="descricao">Apenas pudim</p>
-                            <p class="valor">R$ 7,90</p>
+                            <div class="preco">
+                                <p>R$ </p>
+                                <p class="valor">5,50</p>
+                            </div>
                         </div>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="sobremesa" onclick="SobremesaClicada(this)">
                         <img src="./img/pudim.png">
                         <div>
-                            <h3>Pudim</h3>
+                            <h3>Pudizinhoinho</h3>
                             <p class="descricao">Apenas pudim</p>
-                            <p class="valor">R$ 7,90</p>
+                            <div class="preco">
+                                <p>R$ </p>
+                                <p class="valor">7,60</p>
+                            </div>
                         </div>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -118,7 +145,7 @@
         </div>
         <footer>
             <button class="naofunciona">Selecione os 3 itens para fechar o pedido</button>
-            <button class="funciona escondeBotao" disabled>Fechar pedido</button>
+            <button class="funciona escondeBotao" onclick="CalculaPreco(this)" disabled>Fechar pedido</button>
         </footer>
     </div>
 
