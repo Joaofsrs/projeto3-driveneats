@@ -26,14 +26,14 @@ header div{
 }
 
 header h1{
-  font-family: 'Righteous';
+  font-family: "Righteous";
   font-weight: 400;
   font-size: 44px;
   color: #FFFFFF;
 }
 
 header h2{
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 18px;
   color: #FFFFFF;
@@ -50,7 +50,7 @@ header h2{
 
 .Corpo-da-Pagina h2{
   font-size: 26px;
-  font-family: 'Righteous';
+  font-family: "Righteous";
   font-weight: 400;
   margin-bottom: 18px;
 }
@@ -60,7 +60,7 @@ header h2{
   width: 144px;
   margin-top: 12px;
   font-size: 16px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 700;
 }
 
@@ -69,7 +69,7 @@ header h2{
   width: 144px;
   margin-top: 12px;
   font-size: 15px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .preco{
@@ -81,7 +81,7 @@ header h2{
 .preco p{
   color: #000000;
   font-size: 16px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 500;
 }
 
