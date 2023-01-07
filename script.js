@@ -1,6 +1,7 @@
 let valorPrato, valorBebida, valorSobremesa, valorTotal;
 let nomePrato, nomeBebida, nomeSobremesa;
-let linkMensagem
+let linkMensagem;
+let nome, endereco;
 
 function validacao(){
     const valida = document.querySelectorAll(".clicado");
@@ -57,15 +58,23 @@ function SobremesaClicada(clique){
 }
 
 function mensagem(){
-    const mensagemPEnvio = `Olá, gostaria de fazer o pedido:${"\n"}- Prato: ${nomePrato}${"\n"}- Bebida: ${nomeBebida}${"\n"}- Sobremesa: ${nomeSobremesa}${"\n"}Total: R$ ${valorTotal}`;
+    const mensagemPEnvio = `Olá, gostaria de fazer o pedido:${"\n"}- Prato: ${nomePrato}${"\n"}- Bebida: ${nomeBebida}${"\n"}- Sobremesa: ${nomeSobremesa}${"\n"}Total: R$ ${valorTotal}${"\n\n"}Nome: ${nome}${"\n"}Endereço: ${endereco}`;
 
     linkMensagem = "https://wa.me/559999999999?text="+encodeURIComponent(mensagemPEnvio);
 }
 
-function CalculaPreco(clique){
-    valorTotal  = Number(Number(valorPrato) + Number(valorBebida) + Number(valorSobremesa)).toFixed(2);
-
+function mandarMensagem(){
     mensagem();
 
     window.open(linkMensagem);
+}
+
+function CalculaPreco(){
+    valorTotal  = Number(Number(valorPrato) + Number(valorBebida) + Number(valorSobremesa)).toFixed(2);
+    mandarMensagem()
+}
+
+function getNomeEndereco(){
+    nome = prompt("Digite seu nome:");
+    endereco = prompt("Digite seu enderenco:");
 }

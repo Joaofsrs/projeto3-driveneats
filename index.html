@@ -23,7 +23,7 @@
                 <h2>Primeiro, seu prato</h2>
                 <div class="rollpratos">
                     <div class="prato" onclick="PratoClicado(this)" data-test="dish">
-                        <img src="./img/frango_yin_yang.png">
+                        <img src="./img/frango_yin_yang.png" alt="Um prato com salada, batata e grango Yig">
                         <div>
                             <h3 data-test="item-name">Frango Yig</h3>
                             <p class="descricao">Um pouco de batata, um pouco de salada</p>
@@ -35,7 +35,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="prato" onclick="PratoClicado(this)" data-test="dish">
-                        <img src="./img/frango_yin_yang.png">
+                        <img src="./img/frango_yin_yang.png" alt="Um prato com salada, batata e grango Yang">
                         <div>
                             <h3 data-test="item-name">Frango Yang</h3>
                             <p class="descricao">Um pouco de batata, um pouco de salada</p>
@@ -47,7 +47,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="prato" onclick="PratoClicado(this)" data-test="dish">
-                        <img src="./img/frango_yin_yang.png">
+                        <img src="./img/frango_yin_yang.png" alt="Um prato com salada, batata e grango Yig Yang">
                         <div>
                             <h3 data-test="item-name">Frango Yig Yang</h3>
                             <p class="descricao">Um pouco de batata, um pouco de salada</p>
@@ -64,7 +64,7 @@
                 <h2>Agora, sua bebida</h2>
                 <div class="rollbebidas">
                     <div class="bebida" onclick="BebidaClicada(this)" data-test="drink">
-                        <img src="./img/coquinha_gelada.png">
+                        <img src="./img/coquinha_gelada.png" alt="Uma coca gelada">
                         <div>
                             <h3 data-test="item-name">Coquinha gelada</h3>
                             <p class="descricao">Lata 350ml</p>
@@ -76,7 +76,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="bebida" onclick="BebidaClicada(this)" data-test="drink">
-                        <img src="./img/coquinha_gelada.png">
+                        <img src="./img/coquinha_gelada.png" alt="Uma coca quente">
                         <div>
                             <h3 data-test="item-name">Coquinha quente</h3>
                             <p class="descricao">Lata 350ml</p>
@@ -88,7 +88,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="bebida" onclick="BebidaClicada(this)" data-test="drink">
-                        <img src="./img/coquinha_gelada.png">
+                        <img src="./img/coquinha_gelada.png" alt="Uma coca na temperatura ambiente">
                         <div>
                             <h3 data-test="item-name">Coquinha natural</h3>
                             <p class="descricao">Lata 350ml</p>
@@ -105,7 +105,7 @@
                 <h2>Por fim, sua sobremesa</h2>
                 <div class="rollsobremesas">
                     <div class="sobremesa" onclick="SobremesaClicada(this)" data-test="dessert">
-                        <img src="./img/pudim.png">
+                        <img src="./img/pudim.png" alt="Um pudim">
                         <div>
                             <h3 data-test="item-name">Pudim</h3>
                             <p class="descricao">Apenas pudim</p>
@@ -117,7 +117,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="sobremesa" onclick="SobremesaClicada(this)" data-test="dessert">
-                        <img src="./img/pudim.png">
+                        <img src="./img/pudim.png" alt="Um pudim pequeno">
                         <div>
                             <h3 data-test="item-name">Pudinzinho</h3>
                             <p class="descricao">Apenas pudim</p>
@@ -129,7 +129,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                     <div class="sobremesa" onclick="SobremesaClicada(this)" data-test="dessert">
-                        <img src="./img/pudim.png">
+                        <img src="./img/pudim.png" alt="Um pudim muito pequeno">
                         <div>
                             <h3 data-test="item-name">Pudizinhoinho</h3>
                             <p class="descricao">Apenas pudim</p>
@@ -145,7 +145,7 @@
         </div>
         <footer>
             <button class="naofunciona" data-test="order-btn" disabled="">Selecione os 3 itens para fechar o pedido</button>
-            <button class="funciona escondeBotao" onclick="CalculaPreco(this)" data-test="order-btn" disabled="">Fechar pedido</button>
+            <button class="funciona escondeBotao" onclick="getNomeEndereco();CalculaPreco();" data-test="order-btn" disabled="">Fechar pedido</button>
         </footer>
     </div>
 
