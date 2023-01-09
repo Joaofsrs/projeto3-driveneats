@@ -59,7 +59,7 @@ function SobremesaClicada(clique){
 
 function getNomeEndereco(){
     nome = prompt("Digite seu nome:");
-    endereco = prompt("Digite seu enderenco:");
+    endereco = prompt("Digite seu endereço:");
 }
 
 function mensagem(){
